@@ -56,14 +56,15 @@
 	{
 		margin-top:0;
 	}
-
 }
 
-.thumbnail {
+.thumbnail
+{
 	background-color: transparent;
 	border: none;
 }
 
-.text-info {
+.text-info
+{
 	color: #A63737;
 }

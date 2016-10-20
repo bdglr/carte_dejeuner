@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commandez - La Carte Déjeuner</title>
+        <title>La Carte Déjeuner</title>
         <!-- Meta (encodage, viewport) -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Javascript (Jquery + Bootstrap) -->
+        <!-- Javascript (Jquery) -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
         <!-- Bootstrap CDN (lignes extraites directement de Bootstrap)-->
         <!-- Latest compiled and minified CSS -->
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- Fin de javascript -->
         <!-- Custom fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -59,7 +58,7 @@
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#lacarte">La carte</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#entreprise">L'entreprise</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#temoignage">Témoignages</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#formulairescroll">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -129,7 +128,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 id="entreprise" class="section-heading">Nous innonvons depuis 2008</h2>
+                        <h2 id="entreprise" class="section-heading">Nous innovons depuis 2008</h2>
                         <h3 class="section-subheading text-muted">Découvrez notre vidéo de présentation</h3>
                     </div>
                 </div>
@@ -172,7 +171,7 @@
                                                     </p>
                                                     <p>
                                                         <span class="glyphicon glyphicon-thumbs-up"></span>
-                                                        This is a testimonial window. Feedback of user can be displayed here.
+                                                        Enfin une solution vraiment digitalisée du début à la fin, qui nous libère du chèque..
                                                     </p>
                                                     <blockquote class="adjust2">
                                                         <p>
@@ -205,7 +204,7 @@
                                                     </p>
                                                     <p>
                                                         <span class="glyphicon glyphicon-thumbs-up"></span>
-                                                        This is a testimonial window. Feedback of user can be displayed here.
+                                                        Carte Déjeuner nous a beaucoup aidé dans l'implémentation de la solution, qui s'est révélée être très efficace.
                                                     </p>
                                                     <blockquote class="adjust2">
                                                         <p>
@@ -232,29 +231,51 @@
                 </div>
             </div>
         </section>
-        <!-- Newsletter -->
-        <section id="newsletter">
+        <!-- Formulaire -->
+        <section id="formulaire">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Abonnez-vous !</h2>
-                        <h3 class="section-subheading text-muted">RECEVEZ L'ÉVOLUTION DE LA LOI POUR CONNAÎTRE CE QUE VOUS POUVEZ GAGNER.</h3>
+                        <h2 id="formulairescroll" class="section-heading">Des question ?</h2>
+                        <h3 class="section-subheading text-muted">La Carte déjeuner est un avantage pour votre entreprise. Prenons le temps d'en discuter.</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="col-xs-12 text-center">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Mon email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
+                    <div class="col-lg-12">
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Votre nom *" id="name" required data-validation-required-message="Merci de renseigner votre nom">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Merci de renseigner votre email">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Téléphone *" id="phone" required data-validation-required-message="Merci de renseigner votre téléphone">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Entreprise *" id="entreprise" required data-validation-required-message="Merci de renseigner votre entreprise">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Votre message *" id="message" required data-validation-required-message="Vous ne voulez rien nous dire :( ?"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl">Envoyer</button>
+                                </div>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Je m'abonne</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
