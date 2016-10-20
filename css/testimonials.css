@@ -35,7 +35,7 @@
 
 .carousel-control:hover, .carousel-control:focus
 {
-	color:#31708f;
+	color:#D94848;
 }
 
 .carousel-control.left, .carousel-control.right
@@ -47,6 +47,7 @@
 {
 	margin:auto;
 	margin-top:15%;
+	border-radius:50%;
 }
 
 @media screen and (max-width: 768px)

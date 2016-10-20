@@ -1,0 +1,81 @@
+.nicebutton
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #EAEAEA;
+
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  
+  /* margin: 5em auto;
+  
+  position: absolute;*/ 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 30px 0;
+  width: 220px;
+  height:30px;
+
+  background: #D94848;
+  border: 1px solid #D94848;
+  color: #FFF;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+
+  border-radius: 0px;
+  line-height: 0px;
+}
+
+.nicebutton:hover, .nicebutton:active 
+{
+  text-decoration: none;
+  color: #D94848;
+  border-color: #D94848;
+  background: #EAEAEA;
+}
+
+.nicebutton span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.nicebutton span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.nicebutton:hover span, .nicebutton:active span 
+{
+  padding-right: 30px;
+}
+
+.nicebutton:hover span:after, .nicebutton:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #D94848;
+  right: 0;
+  top: 50%;
+}

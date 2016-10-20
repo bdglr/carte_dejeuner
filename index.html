@@ -22,9 +22,27 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/testimonials.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/nicebutton.css">
+        <!-- JS -->
+        <script src="js/smooth.js"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon/favicon.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="images/favicon/favicon-32.png" type="image/png">
+        <link rel="icon" sizes="64x64" href="images/favicon/favicon-64.png" type="image/png">
+        <link rel="icon" sizes="96x96" href="images/favicon/favicon-96.png" type="image/png">
+        <link rel="icon" sizes="196x196" href="images/favicon/favicon-196.png" type="image/png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="favicon-144.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
     </head>
     <body>
-        <div class="menu_navbar">
+        <div class="menu_navbar" id="top">
             <nav class="navbar navbar-fixed-top adapt" style="background-color: #9E1B28;">
                 <div class="container">
                     <div class="navbar-header">
@@ -34,14 +52,14 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="images/logo_transparent.png" alt="Logo la Carte Déjeuner"></a>
+                        <a class="navbar-brand" href="#top"><img src="images/logo_transparent.png" alt="Logo la Carte Déjeuner"></a>
                     </div>
                     <div id="navbar3" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#monancre">La carte</a></li>
-                            <li><a href="#">L'entreprise</a></li>
-                            <li><a href="#">Témoignages</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#lacarte">La carte</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#entreprise">L'entreprise</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#temoignage">Témoignages</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,23 +69,25 @@
         <header>
             <div class="container">
                 <div class="intro-text">
-                    <div id="monancre" class="intro-lead-in">
+                    <div class="intro-lead-in">
                         L'avantage pour vos employés
                     </div>
                     <div class="intro-heading">
                         La carte remplace le chèque
                     </div>
-                    <a href="#" class="page-scroll btn btn-xl">Je veux acheter !!</a>
+                    <div id="navbar3">
+                        <a href="#lacarte" class="page-scroll btn btn-xl nicebutton"><span>Découvrir</span></a>
+                    </div>
                 </div>
             </div>
         </header>
-        <!-- Présentation entreprise -->
-        <section id="services">
+        <!-- Présentation produit -->
+        <section id="produit">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Notre entreprise</h2>
-                        <h3 class="section-subheading text-muted">Depuis 2008, nous innovons pour les entreprises.</h3>
+                        <h2 id="lacarte" class="section-heading">Un produit innovant</h2>
+                        <h3 class="section-subheading text-muted">Adieu la chèque, dites bonjour à la simplicité</h3>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -104,11 +124,12 @@
                 </div>
             </div>
         </section>
-        <!-- Vidéo -->
+        <!-- Entreprise -->
         <section id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
+                        <h2 id="entreprise" class="section-heading">Nous innonvons depuis 2008</h2>
                         <h3 class="section-subheading text-muted">Découvrez notre vidéo de présentation</h3>
                     </div>
                 </div>
@@ -125,7 +146,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Tout le monde est content</h2>
+                    <h2 id="temoignage" class="section-heading">Tout le monde est content</h2>
                     <h3 class="section-subheading text-muted">Comme en témoignent les gens ci-dessous.</h3>
                 </div>
                 <div class="container content">
@@ -238,11 +259,11 @@
             </div>
         </section>
         <footer>
-        <!-- Contact -->
+            <!-- Contact -->
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-3 col-md-offset-2">
-                        <div>
+                        <div id="contact">
                             <a href="tel:0160764040">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
