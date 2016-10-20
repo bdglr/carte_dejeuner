@@ -1,215 +1,232 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Commandez - La Carte Déjeuner</title>
-
-<!-- Encodage -->
-<meta charset="UTF-8">
-
-<!-- CSS : menu uniquement -->
-<link rel="stylesheet" type="text/css" href="css/menu.css">
-
-<!-- Javascript (Jquery + Bootstrap) --> 
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-<!-- Bootstrap CDN (lignes extraites directement de Bootstrap)-->
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!-- Fin de javascript -->
-
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-<!-- Custom fonts -->
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
-</head>
-<body>
-<div class="menu_navbar">
-  <nav class="navbar navbar-fixed-top" style="background-color: #9E1B28;">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"><img src="images/logo_transparent.png" alt="Logo la Carte Déjeuner">
-        </a>
-      </div>
-      <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">La carte</a></li>
-          <li><a href="#">L'entreprise</a></li>
-          <li><a href="#">Témoignages</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">L'avantage pour vos employés</div>
-                <div class="intro-heading">La carte remplace le chèque</div>
-                <a href="#" class="page-scroll btn btn-xl">Je veux acheter !!</a>
+    <head>
+        <title>Commandez - La Carte Déjeuner</title>
+        <!-- Meta (encodage, viewport) -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Javascript (Jquery + Bootstrap) -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <!-- Bootstrap CDN (lignes extraites directement de Bootstrap)-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Fin de javascript -->
+        <!-- Custom fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/testimonials.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+    </head>
+    <body>
+        <div class="menu_navbar">
+            <nav class="navbar navbar-fixed-top adapt" style="background-color: #9E1B28;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/logo_transparent.png" alt="Logo la Carte Déjeuner"></a>
+                    </div>
+                    <div id="navbar3" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#monancre">La carte</a></li>
+                            <li><a href="#">L'entreprise</a></li>
+                            <li><a href="#">Témoignages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div id="monancre" class="intro-lead-in">
+                        L'avantage pour vos employés
+                    </div>
+                    <div class="intro-heading">
+                        La carte remplace le chèque
+                    </div>
+                    <a href="#" class="page-scroll btn btn-xl">Je veux acheter !!</a>
+                </div>
+            </div>
+        </header>
+        <!-- Présentation entreprise -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Notre entreprise</h2>
+                        <h3 class="section-subheading text-muted">Depuis 2008, nous innovons pour les entreprises.</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Véritable SAV</h4>
+                        <p class="text-muted">
+                            Vous pouvez nous contacter par tous les canaux du lundi au samedi, quelqu'un sera là pour vous guider.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Produit moderne</h4>
+                        <p class="text-muted">
+                            Fini le chèque : La Carte Déjeuner innove pour vous proposer la carte, plus simple d'utilisation et moderne. Notre entreprise s'inscrit dans ce cadre de dynamisme.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Sécurité</h4>
+                        <p class="text-muted">
+                            Nos solutions sont complètement sécurisées : grâce à Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vidéo -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 class="section-subheading text-muted">Découvrez notre vidéo de présentation</h3>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ZfN87gSjvI"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
-
-   <!-- Présentaiton entreprise -->
-    <section id="services">
+    </section>
+    <!-- temoignages -->
+    <section id="temoignages">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Notre entreprise</h2>
-                    <h3 class="section-subheading text-muted">Depuis 2008, nous innovons pour les entreprises.</h3>
+                    <h2 class="section-heading">Tout le monde est content</h2>
+                    <h3 class="section-subheading text-muted">Comme en témoignent les gens ci-dessous.</h3>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Véritable SAV</h4>
-                    <p class="text-muted">Vous pouvez nosu contacter par tous les canaux du lundi au samedi, quelqu'un sera là pour vous guider.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Produit moderne</h4>
-                    <p class="text-muted">Fini le chèque : La Carte Déjeuner innove pour vous proposer la carte, plus simple d'utilisation et moderne. Notre entreprise s'inscrit dans ce cadre de dynamisme.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Sécurité</h4>
-                    <p class="text-muted">Nos solutions sont complètement sécurisées : grâce à Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   <!-- Vidéo -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Découvrez notre vidéo de présentation</h3>
-                </div>
-            </div>
-            <div class="video">
-              <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ZfN87gSjvI"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-   <!-- Témoignages -->
-    <section id="temoignages" class="bg-light-gray">
-        <div class="container">
-<div class="col-md-12" data-wow-delay="0.2s">
-                        <div class="carousel slide" data-ride="carousel" id="quote-carousel" data-interval="100000">
-                            <!-- Bottom Carousel Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
-                                </li>
-                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
-                                </li>
-                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
-                                </li>
-                            </ol>
-
-                            <!-- Carousel Slides / Quotes -->
-                            <div class="carousel-inner text-center">
-
-                                <!-- Quote 1 -->
-                                <div class="item active">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
-                                                <small>Someone famous</small>
+                <div class="container content">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="thumbnail adjust1">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <img class="media-object img-rounded img-responsive" src="images/david.jpg">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                                <div class="caption">
+                                                    <p class="text-info lead adjust2">
+                                                        C'est la qualité du site web qui m'a décidé.
+                                                    </p>
+                                                    <p>
+                                                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                                                        This is a testimonial window. Feedback of user can be displayed here.
+                                                    </p>
+                                                    <blockquote class="adjust2">
+                                                        <p>
+                                                            David Da Silva
+                                                        </p>
+                                                        <small>
+                                                            <cite title="Source Title">
+                                                                <i class="glyphicon glyphicon-globe"></i>
+                                                                www.dsliva.com
+                                                            </cite>
+                                                        </small>
+                                                    </blockquote>
+                                                </div>
                                             </div>
                                         </div>
-                                    </blockquote>
-                                </div>
-                                <!-- Quote 2 -->
-                                <div class="item">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                                <small>Someone famous</small>
-                                            </div>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                                <!-- Quote 3 -->
-                                <div class="item">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
-
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
-                                                <small>Someone famous</small>
-                                            </div>
-                                        </div>
-                                    </blockquote>
+                                    </div>
                                 </div>
                             </div>
-
-                            <!-- Carousel Buttons Next/Prev -->
-                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="thumbnail adjust1">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <img class="media-object img-rounded img-responsive" src="images/quentin.jpg">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                                <div class="caption">
+                                                    <p class="text-info lead adjust2">
+                                                        Ce produit est exceptionnel.
+                                                    </p>
+                                                    <p>
+                                                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                                                        This is a testimonial window. Feedback of user can be displayed here.
+                                                    </p>
+                                                    <blockquote class="adjust2">
+                                                        <p>
+                                                            Quentin Bosco
+                                                        </p>
+                                                        <small>
+                                                            <cite title="Source Title">
+                                                                <i class="glyphicon glyphicon-globe"></i>
+                                                                www.qbosco.com
+                                                            </cite>
+                                                        </small>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Abonnez-vous !</h2>
-                    <h3 class="section-subheading text-muted">RECEVEZ L'ÉVOLUTION DE LA LOI POUR CONNAÎTRE CE QUE VOUS POUVEZ GAGNER.
-</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
+        </section>
+        <!-- Newsletter -->
+        <section id="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Abonnez-vous !</h2>
+                        <h3 class="section-subheading text-muted">RECEVEZ L'ÉVOLUTION DE LA LOI POUR CONNAÎTRE CE QUE VOUS POUVEZ GAGNER.</h3>
+                    </div>
+                </div>
+                <div class="row">
                     <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                        <div class="col-xs-12 text-center">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Mon email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
@@ -219,7 +236,60 @@
                     </form>
                 </div>
             </div>
+        </section>
+        <footer>
+        <!-- Contact -->
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div>
+                            <a href="tel:0160764040">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="copyright">01 60 76 40 40</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            <a href="mailto:contact@cartedejeuner.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="copyright">contact@lacartedejeuner.fr</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="copyright">Lancer le chat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>    
+    </footer>
 </body>
 </html>

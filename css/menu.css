@@ -9,7 +9,7 @@ Responsive navbar-brand image CSS
 }
 .navbar-brand>img {
   height: 100%;
- /*  padding: 15px; */ 
+  padding: 15px;
   width: auto;
 }
 
@@ -26,6 +26,13 @@ line height is 20px by default so add 30px top and bottom to equal the new .navb
   padding-bottom: 30px;
   color: #EAEAEA;
 }
+
+.menu_navbar .nav >li >button {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #EAEAEA;
+}
+
 .menu_navbar .navbar-toggle {
   padding: 10px;
   margin: 25px 15px 25px 0;
@@ -35,11 +42,10 @@ line height is 20px by default so add 30px top and bottom to equal the new .navb
     background-color: #EAEAEA ;
 }
 
-
-
-
-
-
+.menu_navbar .nav > li > a:hover, .menu_navbar .nav > li > a:focus {
+    background-color: #EAEAEA;
+    color: #A63737;
+}
 
 /* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
 .navbar-alignit .navbar-header {
